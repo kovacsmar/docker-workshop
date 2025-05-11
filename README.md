@@ -2,6 +2,10 @@
 
 Demo application containerization example with Docker
 
+## How docker works
+
+![docker](docker-workshop.png)
+
 ## Prerequisites
 
 In this demo you need to have Git and Docker installed to follow the project.
