@@ -5,3 +5,5 @@ tmp
 .env
 LICENSE
 README.md
+# Templ generated files
+*_templ.go
