@@ -5,9 +5,9 @@ import (
 	"net/http"
 	"time"
 
-	"github.com/GoblinInAHat/docker-workshop/views"
 	"github.com/a-h/templ"
 	"github.com/gin-gonic/gin"
+	"github.com/kovacsmar/docker-workshop/views"
 )
 
 const appTimeout = time.Second * 10

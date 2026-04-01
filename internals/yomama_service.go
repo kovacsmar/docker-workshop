@@ -5,12 +5,10 @@ import (
 	"net/http"
 )
 
-var baseURL = "https://www.yomama-jokes.com/api/v1/jokes/random/"
+var baseURL = "https://yomama-jokes.com/api/random"
 
 func createRequest(method, url string) (*http.Request, error) {
-
 	req, err := http.NewRequest(method, url, nil)
-
 	if err != nil {
 		return nil, err
 	}
