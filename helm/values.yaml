@@ -7,9 +7,9 @@ replicaCount: 3 # Demo for loadbalancing with traefik
 
 # This sets the container image more information can be found here: https://kubernetes.io/docs/concepts/containers/images/
 image:
-  repository: yo-mamma
+  repository: ghcr.io/kovacsmar/yo-mamma
   # This sets the pull policy for images.
-  pullPolicy: Never # local minikube only, change to IfNotPresent for registry-based deployments
+  pullPolicy: IfNotPresent
   # Overrides the image tag whose default is the chart appVersion.
   tag: "1.0"
 

@@ -67,3 +67,32 @@ In this workshop we will containerize an application written in Go.
 - Running multiple containers with orchestration
 - Public repos and fun apps to run on Docker
 - Optimization
+
+##  Kubernetes
+
+### Prerequisites
+
+- `kubectl` configured against a running cluster
+- Traefik installed as ingress controller:
+
+```bash
+  helm repo add traefik https://traefik.github.io/charts
+  helm install traefik traefik/traefik -n traefik --create-namespace
+```
+
+- `docker-workshop.local` resolving to your cluster's ingress IP (via DNS or `/etc/hosts`)
+
+### Install via Helm
+
+Install via the public helm repo
+
+```bash
+helm install docker-workshop oci://ghcr.io/kovacsmar/docker-workshop \
+  --version 0.1.0 \
+  -n docker-workshop \
+  --create-namespace
+```
+
+### Access
+
+Navigate to `http://docker-workshop.local`
