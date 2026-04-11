@@ -2,10 +2,6 @@
 
 Demo application containerization example with Docker
 
-## How docker works
-
-![docker](docker-workshop.png)
-
 ## Prerequisites
 
 In this demo you need to have Git and Docker installed to follow the project.
@@ -70,9 +66,14 @@ In this workshop we will containerize an application written in Go.
 
 ##  Kubernetes
 
+If you do not have a Kubernetes cluster you can run it on try out kind ([Install](https://kind.sigs.k8s.io/docs/user/quick-start/#installation)) for running it locally.
+
+> [!WARNING] kind is for testing only, **do NOT** use for production environments, read [documentation](https://kind.sigs.k8s.io/) for more information.
+
 ### Prerequisites
 
-- `kubectl` configured against a running cluster
+- `kubectl` configured against a running cluster [Install](https://kubernetes.io/docs/tasks/tools/#kubectl)
+
 - Traefik installed as ingress controller:
 
 ```bash
